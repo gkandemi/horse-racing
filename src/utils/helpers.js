@@ -42,7 +42,9 @@ export const GENERATE_RANDOM_HORSES = () => {
     id: i + 1,
     name: HORSE_NAMES[i],
     color: GET_RANDOM_COLOR(),
-    condition: Math.floor(Math.random() * 100) + 1
+    condition: Math.floor(Math.random() * 100) + 1,
+    //! 65-100 arası rastgele bir değer için bunu aktif hale getirebilirsiniz
+    // condition: Math.floor(Math.random() * (100 - 65 + 1)) + 65
   }))
 }
 

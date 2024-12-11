@@ -17,7 +17,8 @@ export default defineComponent({
       "play": "PlayIcon",
       "pause": "PauseIcon",
       "horse": "HorseIcon",
-      "cogs": "GenerateIcon"
+      "cogs": "GenerateIcon",
+      "help": "HelpIcon",
     }
   }),
   computed: {
