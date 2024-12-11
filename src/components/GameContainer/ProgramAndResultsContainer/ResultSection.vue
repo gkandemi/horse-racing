@@ -42,7 +42,7 @@ export default {
         :key="round.id"
         :is-result="true"
         :fields="_RESULT_TABLE_FIELDS"
-        :title="round.title"
+        :title="`${round.title} - ${round.distance}m`"
         :items="getOrderedHorses(round.horses)"
       />
     </template>

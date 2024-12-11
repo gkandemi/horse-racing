@@ -12,7 +12,7 @@ export default {
 </script>
 
 <template>
-  <div class="w-[700px] overflow-y-scroll h-full grid grid-cols-2">
+  <div class="w-[500px] overflow-y-scroll h-full grid grid-cols-2">
     <ProgramSection />
     <ResultSection />
   </div>

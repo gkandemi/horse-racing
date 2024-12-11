@@ -34,7 +34,7 @@ export default {
         v-for="round in CURRENT_PROGRAM?.rounds"
         :key="round.id"
         :fields="_PROGRAM_TABLE_FIELDS"
-        :title="round.title"
+        :title="`${round.title} - ${round.distance}m`"
         :items="round.horses"
       />
     </template>
