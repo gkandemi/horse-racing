@@ -1,12 +1,12 @@
 <script>
 import { defineComponent } from 'vue'
 import { mapGetters } from 'vuex'
-import SpeedBar from './HorseList/SpeedBar.vue'
+import ConditionBar from './HorseList/ConditionBar.vue'
 import HorseNameAndColor from './HorseList/HorseNameAndColor.vue'
 
 export default defineComponent({
   name: 'HorseList',
-  components: { HorseNameAndColor, SpeedBar },
+  components: { HorseNameAndColor, ConditionBar },
   computed: {
     ...mapGetters({
       HORSES: 'horse/_GET_ORDERED_HORSES'
@@ -21,7 +21,7 @@ export default defineComponent({
     <div class="h-[calc(100%-40px)] divide-y overflow-auto">
       <div v-for="{name, condition, color} in HORSES" class="p-2.5">
         <HorseNameAndColor :name="name" :color="color" />
-        <SpeedBar :condition="condition" />
+        <ConditionBar :condition="condition" />
       </div>
     </div>
   </div>

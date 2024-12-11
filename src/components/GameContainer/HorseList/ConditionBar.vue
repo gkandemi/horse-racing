@@ -1,6 +1,6 @@
 <script>
 export default {
-  name: 'SpeedBar',
+  name: 'ConditionBar',
   props: {
     condition: {
       type: Number,
@@ -15,7 +15,7 @@ export default {
 
 <template>
   <div class="flex items-center gap-2.5 pt-0.5 pl-4">
-    <div class="text-xs text-green-900">Speed</div>
+    <div class="text-xs text-green-900">Condition</div>
     <div class="flex-1 flex items-center gap-1.5">
       <div class="h-1 rounded-full w-full bg-zinc-200 flex overflow-hidden">
         <div :style="{width: condition + '%'}" class="bg-gradient-to-r from-green-400 to-green-800" />
