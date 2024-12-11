@@ -44,6 +44,7 @@ export default {
         :fields="_RESULT_TABLE_FIELDS"
         :title="`${round.title} - ${round.distance}m`"
         :items="getOrderedHorses(round.horses)"
+        :is-active="round.isActive"
       />
     </template>
     <template v-else>

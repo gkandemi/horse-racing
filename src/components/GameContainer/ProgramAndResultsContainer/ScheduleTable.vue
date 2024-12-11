@@ -26,6 +26,19 @@ export default {
     isResult: {
       type: Boolean,
       default: false
+    },
+    isActive: {
+      type: Boolean,
+      default: false
+    }
+  },
+  computed: {
+    roundClasses(){
+      return {
+        'bg-gray-300/70 text-gray-900': !this.isActive,
+        'bg-red-300/70 text-red-900': !this.isResult && this.isActive,
+        'bg-green-300/70 text-green-900' : this.isResult && this.isActive,
+      }
     }
   }
 }
@@ -35,8 +48,8 @@ export default {
   <div>
     <Heading
       :title="title"
-      class="text-sm text-center py-1 bg-green-300/70 text-green-900"
-      :class="{ 'bg-red-300/70 text-red-900': !isResult }"
+      class="text-sm text-center py-1"
+      :class="roundClasses"
     />
     <AppTable :items="items" :fields="fields">
       <template #name="{ item: { name, condition, color } }">
