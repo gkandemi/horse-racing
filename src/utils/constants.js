@@ -23,4 +23,4 @@ export const HORSE_NAMES = [
 
 
 //! Atın hızını belirlemek için kullanılan sabit değer bu değeri değiştirerek atların hızını değiştirebilirsiniz
-export const SPEED_FACTOR = 1.15
+export const SPEED_FACTOR = 5

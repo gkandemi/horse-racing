@@ -38,7 +38,7 @@ export default {
         isRunning: false,
         rounds
       }
-      commit('SET_PROGRAM', program)
+      commit("SET_PROGRAM", program)
     },
     SET_HORSE_FINISHED({ commit, getters }, { roundId, horseId }) {
       commit('SET_HORSE_FINISHED', { roundId, horseId })

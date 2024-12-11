@@ -6,11 +6,19 @@ export default defineComponent({
   name: 'AppHeader',
   methods: {
     ...mapActions({
-      generateProgram: 'program/GENERATE_PROGRAM'
+      GENERATE_PROGRAM: 'program/GENERATE_PROGRAM'
     }),
     ...mapMutations({
-      toggleProgram: 'program/TOGGLE_PROGRAM'
-    })
+      toggleProgram: 'program/TOGGLE_PROGRAM',
+      SET_PROGRAM: 'program/SET_PROGRAM'
+    }),
+    generateProgram() {
+      if(this._IS_RACE_RUNNING) this.SET_PROGRAM(null)
+      //! DOM güncellemeleri tamamlandığında yeni programı oluştur
+      this.$nextTick(() => {
+        this.GENERATE_PROGRAM()
+      })
+    }
   },
   computed: {
     ...mapGetters({
