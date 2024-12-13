@@ -11,6 +11,9 @@ importers:
       lodash:
         specifier: ^4.17.21
         version: 4.17.21
+      v-smooth-scroll:
+        specifier: 2.0.0-beta.2
+        version: 2.0.0-beta.2(vue@3.5.13)
       vue:
         specifier: ^3.5.13
         version: 3.5.13
@@ -2271,6 +2274,11 @@ packages:
 
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
+
+  v-smooth-scroll@2.0.0-beta.2:
+    resolution: {integrity: sha512-uGWjayzx3mY1QAlDFe+JVCyYPpUqec3NE3tBXq8leIkS23zPcuXmmF2R2MY1UT7uP5gEgEo/Y5blXq37fnXYJw==}
+    peerDependencies:
+      vue: ^3.0.1
 
   v8-to-istanbul@9.3.0:
     resolution: {integrity: sha512-kiGUalWN+rgBJ/1OHZsBtU4rXZOfj/7rKQxULKlIzwzQSvMJUUNgPwJEEh7gU6xEVxC0ahoOBvN2YI8GH6FNgA==}
@@ -4949,6 +4957,10 @@ snapshots:
       picocolors: 1.1.1
 
   util-deprecate@1.0.2: {}
+
+  v-smooth-scroll@2.0.0-beta.2(vue@3.5.13):
+    dependencies:
+      vue: 3.5.13
 
   v8-to-istanbul@9.3.0:
     dependencies:

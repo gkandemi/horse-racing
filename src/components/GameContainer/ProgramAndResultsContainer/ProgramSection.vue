@@ -33,6 +33,7 @@ export default {
       <ScheduleTable
         v-for="round in CURRENT_PROGRAM?.rounds"
         :key="round.id"
+        :id="`schedule-for-${round.id}`"
         :fields="_PROGRAM_TABLE_FIELDS"
         :title="`${round.title} - ${round.distance}m`"
         :items="round.horses"

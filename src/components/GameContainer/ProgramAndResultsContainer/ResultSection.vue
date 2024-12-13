@@ -41,6 +41,7 @@ export default {
         v-for="round in CURRENT_PROGRAM?.rounds"
         :key="round.id"
         :is-result="true"
+        :id="`result-for-${round.id}`"
         :fields="_RESULT_TABLE_FIELDS"
         :title="`${round.title} - ${round.distance}m`"
         :items="getOrderedHorses(round.horses)"

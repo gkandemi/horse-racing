@@ -22,9 +22,9 @@ export default {
       <template v-if="CURRENT_ROUND">
         <div class="flex flex-col gap-y-1 w-full">
           <RaceTrack
-            v-for="(horse, idx) in ROUND_HORSE_LIST"
-            :key="`race-track-${CURRENT_ROUND?.id}_${horse.id}`"
-            :horse="horse" :idx="idx" />
+              v-for="(horse, idx) in ROUND_HORSE_LIST"
+              :key="`race-track-${CURRENT_ROUND?.id}_${horse.id}`"
+              :horse="horse" :idx="idx" />
         </div>
         <div v-if="CURRENT_ROUND" class="round-name">{{ CURRENT_ROUND?.title }} - {{ CURRENT_ROUND?.distance }}m</div>
       </template>
@@ -33,7 +33,7 @@ export default {
       </template>
 
       <!-- Tips -->
-      <TipContainer v-if="CURRENT_ROUND" />
+      <TipContainer v-if="CURRENT_ROUND"/>
       <!-- /Tips -->
     </div>
   </div>

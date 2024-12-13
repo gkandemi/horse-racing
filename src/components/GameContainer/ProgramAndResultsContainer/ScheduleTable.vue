@@ -30,6 +30,13 @@ export default {
     isActive: {
       type: Boolean,
       default: false
+    },
+    id: {
+      type: String,
+      required: true,
+      validator(value) {
+        return value.length > 0
+      }
     }
   },
   computed: {
@@ -48,6 +55,7 @@ export default {
   <div>
     <Heading
       :title="title"
+      :id="id"
       class="text-sm text-center py-1"
       :class="roundClasses"
     />
